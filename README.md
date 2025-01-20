@@ -1,4 +1,4 @@
-# Algorythmie
+# Algorithmie
 
 Ce dépôt contient une collection d'algorithmes et de structures de données implémentés en Java. Il est organisé pour couvrir les bases de l'algorithmie jusqu'à des concepts avancés.
 
