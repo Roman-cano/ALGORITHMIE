@@ -34,6 +34,7 @@ public class Fonction {
 
 
     public static String convertirBase(int nombre, int base) {
+        //uniquement les bases 2,3,4,5,6,7,8,9
         String resultat = "";
         while (nombre > 0) {
             resultat = nombre % base + resultat;
