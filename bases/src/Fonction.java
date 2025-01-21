@@ -17,7 +17,21 @@ public class Fonction {
 
         System.out.println("Hello, World!");
         System.out.println( estPalindrome("kayak"));
+        System.out.println("------------------------------");
         System.out.println( convertirBase(3210, 16));
+        System.out.println("------------------------------");
+
+        System.out.println( factoriel(5));
+        System.out.println("------------------------------");
+        drawRectangle(5, 10);
+        System.out.println("------------------------------");
+        drawSquare(5);
+        System.out.println("------------------------------");
+        String chaine = "bonjour";
+        eliminerDoublon(chaine);
+        System.out.println(chaine);
+
+
     }
 
     public static boolean estPalindrome(String chaine) {
@@ -41,5 +55,41 @@ public class Fonction {
             nombre = nombre / base;
         }
         return resultat;
+    }
+
+    public static int factoriel(int n) {
+        int resultat = 1;
+        for (int i = 1; i <= n; i++) {
+            resultat = resultat * i;
+        }
+        return resultat;
+    }
+
+    public static void drawRectangle(int longueur, int largeur) {
+        for (int i = 0; i < longueur; i++) {
+            for (int j = 0; j < largeur; j++) {
+                System.out.print("*  ");
+            }
+            System.out.println("");
+        }
+    }
+
+    public static void drawSquare(int longueur) {
+        for (int i = 0; i < longueur; i++) {
+            for (int j = 0; j < longueur; j++) {
+                System.out.print("*  ");
+            }
+            System.out.println("");
+        }
+    }
+
+    public static String eliminerDoublon(String chaine) {
+        String resultat = "";
+        for (int i = 0; i < chaine.length(); i++) {
+            if (resultat.indexOf(chaine.charAt(i)) == -1) {
+                resultat += chaine.charAt(i);
+            }
+        }
+       return resultat;
     }
 }
