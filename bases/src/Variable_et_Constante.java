@@ -2,6 +2,7 @@ public class Variable_et_Constante {
     public static final double farConst =  9/5;
     public static final double kelConst = 273.15;
     public static final double rankineConst = 9/5;
+
     public static final double pi = 3.14159;
     public static void main(String[] args) {
         // //////////////////////////////////////
