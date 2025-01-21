@@ -187,13 +187,29 @@ public class Boucles {
         // /////////////////
         // Boucle do while
         // ////////////////
+
+        // afficher les nombres de 1 à 10
         int doWhileN = 0;
         do {
-            
+
             doWhileN++;
             System.out.println(doWhileN);
 
         } while(doWhileN < 10);
+
+
+
+        System.out.println("------------------------------");
+
+        // 
+        // fait la somme des chiffres d'un nombre
+        int nbrDecomp = 2950;
+        int resultDecomp = 0;
+        do {
+            resultDecomp += nbrDecomp % 10;
+            nbrDecomp = nbrDecomp / 10;
+            System.out.println(resultDecomp);
+        }while (nbrDecomp > 0);
     }
 
 
