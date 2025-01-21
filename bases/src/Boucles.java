@@ -1,5 +1,5 @@
 public class Boucles {
-    public static  void main(String[] args) {
+    public static void main(String[] args) {
 
         // //////////////////////////////////////
         //               Boucles               //
@@ -22,8 +22,8 @@ public class Boucles {
         // ////////////////
         int n = 20;
         int somme = 0;
-        for (int i = 0; i < n ; i++) {
-            somme+=i;
+        for (int i = 0; i < n; i++) {
+            somme += i;
         }
         System.out.println("La somme des " + n + " premiers nombres est: " + somme);
 
@@ -64,7 +64,7 @@ public class Boucles {
         int nb2 = 5;
         for (int i = 0; i < nb; i++) {
 
-            for (int space = 0; space <= nb2 - i +2 -1; space++) {
+            for (int space = 0; space <= nb2 - i + 2 - 1; space++) {
                 System.out.print(" ");
             }
             for (int y = 0; y < i; y++) {
@@ -109,9 +109,31 @@ public class Boucles {
         }
 
         System.out.println("------------------------------");
+
+
+        // /////////////////
+        // table de multiplication jusqu'a n
+        // ////////////////
+
+        int nbr = 5;
+        int j = 0;
+        for (int i = 0; i < 5 ; i++) {
+            for ( j = 0; j < 10; j++) {
+                System.out.print(i + " * " + j + " = " + i * j + "| ");
+            }
+            System.out.println("");
+            System.out.println("------------------------------");
+        }
     }
 
-    // /////////////////
-    // Boucle while
-    // ////////////////
+
+
 }
+
+
+
+
+
+
+
+
