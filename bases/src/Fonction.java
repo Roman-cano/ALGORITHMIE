@@ -30,6 +30,7 @@ public class Fonction {
         String chaine = "bonjour";
         eliminerDoublon(chaine);
         System.out.println(chaine);
+        System.out.println(valideIP("172.16.32.211"));
 
 
     }
@@ -92,4 +93,52 @@ public class Fonction {
         }
        return resultat;
     }
+
+    public static boolean valideIP(String ip) {
+        if (ip == null || ip.isEmpty()) {
+            return false;
+        }
+
+        String currentOctet = "";
+        int nbrOctet = 0;
+
+        for (int i = 0; i < ip.length(); i++) {
+            char c = ip.charAt(i);
+
+
+            if (!Character.isDigit(c) && c != '.') {
+                return false;
+            }
+
+            if (c != '.') {
+                currentOctet += c;
+
+
+                if (currentOctet.length() > 3) {
+                    return false;
+                }
+            } else {
+                nbrOctet++;
+
+
+                if (currentOctet.isEmpty() || Integer.parseInt(currentOctet) > 255) {
+                    return false;
+                }
+
+                currentOctet = "";
+            }
+        }
+
+
+        if (!currentOctet.isEmpty()) {
+            nbrOctet++;
+            if (Integer.parseInt(currentOctet) > 255) {
+                return false;
+            }
+        }
+
+
+        return nbrOctet == 4;
+    }
+
 }
