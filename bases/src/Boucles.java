@@ -187,8 +187,13 @@ public class Boucles {
         // /////////////////
         // Boucle do while
         // ////////////////
+        int doWhileN = 0;
+        do {
+            
+            doWhileN++;
+            System.out.println(doWhileN);
 
-        
+        } while(doWhileN < 10);
     }
 
 
