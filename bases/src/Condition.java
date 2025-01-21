@@ -99,5 +99,52 @@ public class Condition {
         System.out.println("Le prix final est: " + prix);
 
 
+        System.out.println("------------------------------");
+        // /////////////////
+        // convertisseur note
+        // ////////////////
+        int note = 95;
+        char grade;
+
+       if(note >= 90) {
+           grade = 'A';
+       }
+       else if(note >= 80) {
+           grade = 'B';
+       }
+       else if(note >= 70) {
+           grade = 'C';
+       }
+       else if(note >= 60) {
+           grade = 'D';
+       }
+       else {
+           grade = 'F';
+       }
+
+        System.out.println("La note est: " + grade);
+
+        System.out.println("------------------------------");
+
+        // /////////////////
+        // calcul prime salariale
+        // ////////////////
+
+        int anciennete = 5;
+        double prime = 0;
+        double salaire = 2300;
+
+        if(anciennete >= 5) {
+            prime = salaire * 0.1;
+            System.out.println("Le salaire est: " + prime);
+        }
+        else if(salaire >= 2) {
+            prime =  salaire * 0.05;
+            System.out.println("Le salaire est: " + prime);
+        }
+        else {
+            System.out.println("Pas de prime salariale");
+        }
+        System.out.println("le salaire est:" + (salaire + prime));
     }
 }
