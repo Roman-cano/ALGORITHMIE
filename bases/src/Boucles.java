@@ -201,7 +201,7 @@ public class Boucles {
 
         System.out.println("------------------------------");
 
-        // 
+        //
         // fait la somme des chiffres d'un nombre
         int nbrDecomp = 2950;
         int resultDecomp = 0;
