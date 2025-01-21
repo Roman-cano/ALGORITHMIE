@@ -111,7 +111,8 @@ public class Boucles {
         System.out.println("------------------------------");
 
 
-        
+
+
 
         // /////////////////
         // table de multiplication jusqu'a n
@@ -163,6 +164,31 @@ public class Boucles {
 
         // /////////////////
         // compter le
+        int monNbr = 9875;
+        int result = 0;
+
+        while (monNbr >= 10) {
+            result = 0;
+
+
+            while (monNbr > 0) {
+                result += monNbr % 10;
+                monNbr = monNbr / 10;
+            }
+
+
+            monNbr = result;
+        }
+
+        // Afficher le résultat final
+        System.out.println("La réduction numérique est : " + monNbr);
+        System.out.println("------------------------------");
+
+        // /////////////////
+        // Boucle do while
+        // ////////////////
+
+        
     }
 
 
