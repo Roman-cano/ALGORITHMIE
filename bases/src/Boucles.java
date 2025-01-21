@@ -31,7 +31,7 @@ public class Boucles {
 
 
         // /////////////////
-        // carré de nombre
+        // dessin d'un carré de nombre
         // ////////////////
 
         int nombre = 5;
@@ -111,6 +111,8 @@ public class Boucles {
         System.out.println("------------------------------");
 
 
+        
+
         // /////////////////
         // table de multiplication jusqu'a n
         // ////////////////
@@ -124,6 +126,43 @@ public class Boucles {
             System.out.println("");
             System.out.println("------------------------------");
         }
+
+
+        // /////////////////
+        // Boucle while
+        // ////////////////
+
+        // afficher les nombres de 1 à 10
+
+        int i = 1;
+        while (i <= 10) {
+            System.out.println(i);
+            i++;
+        }
+
+        System.out.println("------------------------------");
+
+
+        // /////////////////
+        // compter le nombre de voyelles dans un mot
+        // ////////////////
+
+        String mot2 = "bonjour";
+        int index = 0;
+        int nbVoyelles = 0;
+        while(index < mot2.length()) {
+            char lettre = mot2.charAt(index);
+            if(lettre == 'a' || lettre == 'e' || lettre == 'i' || lettre == 'o' || lettre == 'u' || lettre == 'y') {
+                nbVoyelles++;
+            }
+            index++;
+        }
+        System.out.println("Le mot " + mot2 + " contient " + nbVoyelles + " voyelles");
+
+        System.out.println("------------------------------");
+
+        // /////////////////
+        // compter le
     }
 
 
