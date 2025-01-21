@@ -4,6 +4,15 @@ public class Condition {
         // Structure conditionlle
         // //////////////////////////////////////
 
+        // proposition booléenne
+        // //////////////////////////////
+        // == est égal à              ///
+        // != est différent de        ///
+        // <  est inférieur à         ///
+        // >  est supérieur à         ///
+        // <= est inférieur ou égal à ///
+        // >= est supérieur ou égal à ///
+        // //////////////////////////////
 
         // /////////////////
         // vérifier si un nombre est pair ou impair
