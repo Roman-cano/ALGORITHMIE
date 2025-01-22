@@ -32,6 +32,11 @@ public class Fonction {
         System.out.println(chaine);
         System.out.println(valideIP("172.16.32.211"));
 
+        System.out.println("------------------------------");
+
+
+
+
 
     }
 
